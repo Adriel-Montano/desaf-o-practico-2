@@ -1,0 +1,263 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(180deg, #f4c4c4 70%, #2c3e50 100%);
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+.login-container {
+    background-image: url('../fon.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    color: #ffffff; 
+}
+
+
+.login-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    border-radius: 15px;
+    z-index: 1;
+}
+
+
+.login-container * {
+    position: relative;
+    z-index: 2;
+}
+
+.login-container h2,
+.login-container label {
+    color: #ffffff;
+}
+
+.login-container a {
+    color: #f4c4c4;
+}
+
+.login-container a:hover {
+    color: #e67e80;
+}
+
+.login-container .error {
+    background-color: rgba(231, 76, 60, 0.8); 
+}
+
+
+h2 {
+    color: #2c3e50;
+    margin-bottom: 25px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 32px;
+}
+
+h3 {
+    color: #e67e80;
+    margin: 25px 0 15px;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+h4 {
+    color: #7f8c8d;
+    margin: 15px 0;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+label {
+    font-weight: 500;
+    color: #555;
+    font-size: 16px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea,
+input[type="file"] {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+textarea:focus,
+input[type="file"]:focus {
+    border-color: #e67e80;
+    box-shadow: 0 0 8px rgba(230, 126, 128, 0.3);
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+button {
+    background-color: #e67e80;
+    color: #ffffff;
+    padding: 14px 25px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #d35454;
+    transform: translateY(-2px);
+}
+
+a {
+    color: #e67e80;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #f4c4c4;
+    text-decoration: underline;
+}
+
+
+.error {
+    color: #ffffff;
+    background-color: #e74c3c;
+    padding: 12px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 500;
+}
+
+
+.project {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+}
+
+.project p {
+    color: #666;
+    font-size: 14px;
+}
+
+.project-actions {
+    margin-top: 15px;
+    display: flex;
+    gap: 15px;
+}
+
+/*esto para Archivos */
+.file {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+}
+
+.file:last-child {
+    border-bottom: none;
+}
+
+.file a {
+    color: #e74c3c;
+}
+
+.file a:hover {
+    color: #c0392b;
+}
+
+
+.logout {
+    display: block;
+    text-align: right;
+    margin-bottom: 25px;
+    font-size: 16px;
+}
+
+
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    button {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    textarea,
+    input[type="file"] {
+        font-size: 14px;
+    }
+}
