@@ -2,7 +2,12 @@
 
 ## Desafío Práctico 2 - Desarrollo de Aplicaciones Web con Software Interpretado en el Servidor
 
-**Estudiantes:** Adriel Caleb Montano Lemus 
+**Estudiantes:** 
+
+-Adriel Caleb Montano Lemus
+
+-Keiry Elizabeth Ortez Vásquez
+
 **Grupo:** 06L  
 **Ciclo:** 01-2025  
 **Docente:** Ing. Yesenia Escobar
@@ -59,7 +64,10 @@ Este proyecto es un sistema web desarrollado en PHP y MySQL que permite a los em
 
 ### Roles Asumidos
 
-- **Desarrolladores Principal:** Adriel Caleb Montano Lemus
+- **Desarrolladores Principales:**
+- Adriel Caleb Montano Lemus
+- Keiry Elizabeth Ortez Vásquez
+  
   - Responsable de la implementación completa del sistema
   -  diseño de la base de datos,
   -   desarrollo de las clases,
