@@ -26,8 +26,7 @@ Este proyecto es un sistema web desarrollado en PHP y MySQL que permite a los em
    - Ejecuta el script `database.sql` para crear la base de datos y las tablas necesarias.
 
 3. **Configurar Permisos**:
-   - Asegúrate de que la carpeta `uploads/` tenga permisos de escritura. En Windows, haz clic derecho en la carpeta, ve a "Propiedades", pestaña "Seguridad", y dale permisos completos a "Todos".
-
+   - Asegúrese de crear la carpeta `uploads/` en la raíz del proyecto `/proyectos_colaborativos/uploads/` y de que tenga permisos de escritura. En Windows, haga clic derecho en la carpeta, vaya a 'Propiedades', pestaña 'Seguridad', y otorgue permisos completos a 'Todos'.
 4. **Acceder al Sistema**:
    - Abre tu navegador y accede a `http://localhost/proyectos_colaborativos/index.php`.
    - Regístrate con un nuevo usuario, inicia sesión, y comienza a usar el sistema.
